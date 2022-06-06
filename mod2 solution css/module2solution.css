@@ -1,0 +1,150 @@
+h1{text-align: center;
+margin-top: 100px;
+margin-bottom: 20px;
+font-family: Comic Sans MS, Arial;
+}
+
+.flexcontainer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+
+.flexbox1{height: 150px;
+border: 2px solid black;
+padding: 30px;
+background-color: grey;
+width: 33%;
+overflow-wrap: ;}
+.flexbox2{height: 150px; border: 2px solid black;
+padding: 30px;
+background-color: grey;
+width: 33%;
+overflow: clip;}
+.flexbox3{height: 150px; border: 2px solid black;
+padding: 30px;
+background-color: grey;
+width: 33%;
+overflow: clip;
+}
+
+
+.minibox1{
+	float:right;
+	height: 10px;
+	width: 100px;
+	background-color: #ed857e;
+	padding: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	border-left:2px solid black; 
+	border-bottom:2px solid black; 
+	font-family: Comic Sans MS, Arial;
+	position: relative; top:-30px;
+	right: -30px;
+}
+
+.minibox1 p {position: relative; top:-20px;}
+.minibox2{
+	float:right;
+	height: 10px;
+	width: 100px;
+	background-color: #b81f14;
+	padding: 10px;
+	text-align: center;
+	border-left:2px solid black; 
+	border-bottom:2px solid black; 
+	font-family: Comic Sans MS, Arial;
+	position: relative; top:-30px;
+	right: -30px;
+}
+.minibox2 p {position: relative; top:-20px;}
+.minibox3{
+	float:right;
+	height: 10px;
+	width: 100px;
+	background-color: #f5f77c;
+	padding: 10px;
+	text-align: center;
+	border-left:2px solid black; 
+	border-bottom:2px solid black; 
+	font-family: Comic Sans MS, Arial;
+	position: relative; top:-30px;
+	right: -30px;
+}
+.minibox3 p {position: relative; top:-20px;}
+.text1{position: relative; top: 20px;
+font-family: Comic Sans MS, Arial;}
+
+
+@media (max-width: 767px){
+	.flexcontainer {
+	display: flex;
+	flex-flow: column ;
+	justify-content: space-around;
+}
+
+.flexbox1{height: 150px;
+border: 2px solid black;
+padding: 30px;
+background-color: grey;
+width: 87%;
+margin-bottom: 15px;}
+.flexbox2{height: 150px; border: 2px solid black;
+padding: 30px;
+background-color: grey;
+width: 87%;
+margin-bottom: 15px;}
+.flexbox3{height: 150px; border: 2px solid black;
+padding: 30px;
+background-color: grey;
+width: 87%;
+margin-bottom: 15px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+.flexcontainer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;}
+.flexbox1{height: 150px;
+border: 2px solid black;
+padding: 30px;
+background-color: grey;
+width: 33%;
+margin-bottom: 15px;
+overflow: clip;}
+.flexbox2{height: 150px; border: 2px solid black;
+padding: 30px;
+background-color: grey;
+width: 33%;
+margin-bottom: 15px;}
+.flexbox3{height: 150px; border: 2px solid black;
+padding: 30px;
+background-color: grey;
+width: 33%;
+flex: 1 0 90%;}
+}
+
+@media (min-width: 992px){
+	.flexbox1 .floxbox2 .flexbox3 {float: left;}
+	
+.flexbox1{height: 150px;
+border: 2px solid black;
+padding: 30px;
+background-color: grey;
+width: 25%;
+overflow:clip;}
+.flexbox2{height: 150px; border: 2px solid black;
+padding: 30px;
+background-color: grey;
+width: 25%;
+overflow: clip;}
+.flexbox3{height: 150px; border: 2px solid black;
+padding: 30px;
+background-color: grey;
+width: 25%;
+overflow: clip;
+}
+}
